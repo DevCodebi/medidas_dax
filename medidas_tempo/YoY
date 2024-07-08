@@ -1,0 +1,13 @@
+ISO PY Custom := CALCULATE(
+    SUM(Sales[Sales Amount]),
+    FILTER(
+        ALL(Dates),
+        CONTAINS(
+            VALUES(Dates[ISO YOY Date]),
+            Dates[ISO YOY Date],
+            Dates[Date]
+        )
+    )
+)
+Iso YOY Custom := [Sales] - [ISO PY Custom]
+Iso YOY Custom % := IF([Iso PY Custom] <> 0, [Iso YOY Custom] / [Iso PY Custom], BLANK())
