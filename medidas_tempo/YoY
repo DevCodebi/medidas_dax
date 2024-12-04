@@ -11,3 +11,5 @@ ISO PY Custom := CALCULATE(
 )
 Iso YOY Custom := [Sales] - [ISO PY Custom]
 Iso YOY Custom % := IF([Iso PY Custom] <> 0, [Iso YOY Custom] / [Iso PY Custom], BLANK())
+
+#totalmente
