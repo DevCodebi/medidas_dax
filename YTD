@@ -1,1 +1,1 @@
-TOTALYTD(<expression>,<dates>[,<filter>][,<year_end_date>])  
+TOTALYTD(<expression>,<dates>[,<filter>][,<year_end_date>]), CALCULATE, ADDCOLUMNS))) 
